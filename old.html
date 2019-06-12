@@ -35,9 +35,7 @@
                 </li>
             </ul>
         </div>
-
     </nav>
-
     <div class="container">
         <br>
         <h1>Scranton County Appraiser</h1>
@@ -45,7 +43,7 @@
     </div>
     <div style="display: inline-block">
         <div style="float: left; width: 950px; margin-left: 250px">
-            <table class="table table-sm table-bordered">
+            <table class="table table-sm table-bordered" id="OwnerAndPropertyInfoTable">
                 <thead class="thead-dark">
                     <tr>
                         <th colspan="4">Owner & Property Info</th>
@@ -54,42 +52,43 @@
                 <tbody>
                     <tr>
                         <th scope="col">Owner's Name</th>
-                        <td colspan="1">MICHAEL SCOTT J</td>
+                        <td colspan="1" id="OwnerName">MICHAEL SCOTT J</td>
                         <td rowspan="4" colspan="2"><img src="https://i.imgur.com/d4zPBbY.jpg"
                                 style="width: 275px; height: 175px">
                             <img src="https://i.imgur.com/g0mfhVS.png" style="width: 275px; height: 175px"></td>
                     </tr>
                     <tr>
                         <th scope="col">Site Address</th>
-                        <td colspan="1">1725 SLOUGH AVE, SCRANTON</td>
+                        <td colspan="1" id="SiteAddress">1725 SLOUGH AVE, SCRANTON</td>
                     </tr>
                     <tr>
                         <th scope="col">Mailing Address</th>
-                        <td colspan="1">PO BOX 120 SCRANTON</td>
+                        <td colspan="1" id="MailingAddress">PO BOX 120 SCRANTON</td>
                     </tr>
                     <tr>
                         <th scope="col">Use Desc. (code)</th>
-                        <td colspan="1">SINGLE FAM (00100)</td>
+                        <td colspan="1" id="UseDesc">SINGLE FAM (00100)</td>
                     </tr>
                     <tr>
                         <th scope="col">Neighborhood</th>
-                        <td>000100.50</td>
+                        <td id="Neighborhood">000100.50</td>
                         <th scope="col">Tax District</th>
-                        <td>2 (SCRANTON)</td>
+                        <td id="TaxDistrict">2 (SCRANTON)</td>
                     </tr>
                     <tr>
                         <th scope="col">UD Codes</th>
-                        <td></td>
+                        <td id="UDCodes"></td>
                         <th scope="col">Market Area</th>
-                        <td>01</td>
+                        <td id="MarketArea">01</td>
                     </tr>
                     <tr>
                         <th scope="col">Total Land Area</th>
-                        <td colspan="3">0.000 ACRES - *(See Acreage Note at bottom of page</td>
+                        <td colspan="3" id="TotalLandArea">0.000 ACRES - *(See Acreage Note at bottom of page</td>
                     </tr>
                     <tr>
                         <th scope="col">Description</th>
-                        <td colspan="3"><i>NOTE: The following description is not to be used as the Legal Description
+                        <td colspan="3" id="Desc"><i>NOTE: The following description is not to be used as the Legal
+                                Description
                                 for
                                 this parcel in
                                 any legal transaction.</i> <br> <br>
@@ -101,9 +100,8 @@
                 </tbody>
             </table>
         </div>
-
         <div style="float: right; width: 400px; margin-right: 50px">
-            <table class="table table-sm table-bordered">
+            <table class="table table-sm table-bordered" id="PropertyAndAssessmentValuesTable">
                 <thead class="thead-dark">
                     <tr>
                         <th colspan="4">Property & Assessment Values</th>
@@ -113,57 +111,55 @@
                     <tr>
                         <th scope="col">Mkt Land Value</th>
                         <td colspan="1">cnt: (1)</td>
-                        <td colspan="1">$2,500.00</td>
+                        <td colspan="1" id="MktLandValue">$2,500.00</td>
                     </tr>
                     <tr>
                         <th scope="col">Ag Land Value</th>
                         <td colspan="1">cnt: (0)</td>
-                        <td colspan="1">$0.00</td>
+                        <td colspan="1" id="AgLandValue">$0.00</td>
                     </tr>
                     <tr>
                         <th scope="col">Building Value</th>
                         <td colspan="1">cnt: (1)</td>
-                        <td colspan="1">$59,663.00</td>
+                        <td colspan="1" id="BuildingValue">$59,663.00</td>
                     </tr>
                     <tr>
                         <th scope="col">XFOB Value</th>
                         <td colspan="1">cnt: (5)</td>
-                        <td colspan="1">$4,688.00</td>
+                        <td colspan="1" id="XFOBValue">$4,688.00</td>
                     </tr>
                     <tr>
                         <th scope="col">Total Appraised Value</th>
-                        <td colspan="2">$66,851.00</td>
+                        <td colspan="2" id="TotalAppraisedValue">$66,851.00</td>
                     </tr>
                 </tbody>
             </table>
-            <table class="table table-sm table-bordered">
+            <table class="table table-sm table-bordered" id="PropertyAndAssessmentValuesTable2">
                 <tbody>
                     <tr>
                         <th scope="col">Just Value</th>
-                        <td colspan="1">$66,851.00</td>
+                        <td colspan="1" id="JustValue">$66,851.00</td>
                     </tr>
                     <tr>
                         <th scope="col">Class Value</th>
-                        <td colspan="1">$0.00</td>
+                        <td colspan="1" id="ClassValue">$0.00</td>
                     </tr>
                     <tr>
                         <th scope="col">Assessed Value</th>
-                        <td colspan="1">$60,643.00</td>
+                        <td colspan="1" id="AssessedValue">$60,643.00</td>
                     </tr>
                     <tr>
                         <th scope="col">Exemptions</th>
-                        <td colspan="1">(code: HX H3)</td>
+                        <td colspan="1" id="Exemptions">(code: HX H3)</td>
                     </tr>
                     <tr>
                         <th scope="col">Total Taxable Value</th>
-                        <td colspan="2">County: $25,000.00 | City: $25,000.00
+                        <td colspan="2" id="TotalTaxableValue">County: $25,000.00 | City: $25,000.00
                             Other: $25,000.00 | School: $35,643.00</td>
                     </tr>
                 </tbody>
             </table>
         </div>
-
-
     </div>
 </body>
 
